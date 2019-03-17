@@ -12,9 +12,7 @@ node
    }
     stage('Публикация результатов') 
 	{
-            steps 
-		{
-                script 
+              script 
 			{
                     def allurePath = tool name: 'allure', type: 'allure'
                     cmd("${allurePath}/bin/allure generate -o out/allure-report out/allure")
@@ -30,8 +28,7 @@ node
                 reportTitles: ''
                 ]
                 
-            	}
-        }
+            	   }
 }
 def cmd(command) {
         bat "chcp 65001\n${command}"
