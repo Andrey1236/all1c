@@ -27,8 +27,8 @@ node
    }
    stage('Публикация результатов') 
 	{
-            steps 
-		{
+         //   steps 
+	//	{
                 script 
 			{
                     def allurePath = tool name: 'allure', type: 'allure'
@@ -45,6 +45,6 @@ node
                 reportTitles: ''
                 ]
                 
-            	}
+         //   	}
         }
 }
