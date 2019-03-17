@@ -1,6 +1,3 @@
-def cmd(command) {
-        bat "chcp 65001\n${command}"
-    }
 def workspace;
 node 
 {
@@ -48,3 +45,6 @@ node
          //   	}
         }
 }
+def cmd(command) {
+        bat "chcp 65001\n${command}"
+    }
